@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".top_up"
+    android:padding="10dp"
+    android:background="@color/purple_500">
+
+    <LinearLayout
+        android:id="@+id/amountInput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="221dp"
+            android:layout_height="41dp"
+            android:text="Top Up E-Wallet"
+            android:textColor="@color/purple_500"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reload Amount (RM) :" />
+
+        <EditText
+            android:id="@+id/amount_topup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="5.00"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password :"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/topup_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="******"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Password required to make sure that you are owner"
+            android:textStyle="italic"
+            android:padding="5dp"
+            android:textColor="#878686"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/go_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed Payment"
+            android:backgroundTint="#FF0000"/>
+
+        <Button
+            android:id="@+id/goback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="back"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/waiting_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We are trying to contact server to get token!"
+            android:layout_gravity="center_vertical"
+            android:textSize="20dp"
+            android:textColor="@color/purple_500"/>
+    </LinearLayout>
+
+</LinearLayout>

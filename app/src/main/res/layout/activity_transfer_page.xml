@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".transfer_page"
+    android:padding="@dimen/browser_actions_context_menu_min_padding"
+    android:background="@color/purple_500">
+
+    <LinearLayout
+        android:id="@+id/transfer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@drawable/img_5" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country Code : "/>
+
+        <EditText
+            android:id="@+id/c_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="60"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number :"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/p_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="1234567890"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount (RM) :"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="100"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description : (optional)" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="lunch fee"
+            android:inputType="textPersonName"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/proceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed"
+            android:backgroundTint="#FF0000"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/back2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/transfer2"
+        android:layout_width="match_parent"
+        android:layout_height="746dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password :" />
+
+        <EditText
+            android:id="@+id/transfer_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="******"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <Button
+            android:id="@+id/go_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF0000"
+            android:text="Proceed Payment" />
+
+        <Button
+            android:id="@+id/goback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="back" />
+
+    </LinearLayout>
+
+</LinearLayout>
